@@ -33,6 +33,11 @@
                 listItem.addEventListener("click", function(){
                     this.classList.toggle('done');
                 })
+
+                listItem.querySelector("i").addEventListener("click",
+                function(){
+                    listItem.remove();
+                })
                 list.appendChild(listItem);
         }
     </script>
