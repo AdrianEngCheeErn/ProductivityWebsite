@@ -18,10 +18,11 @@ body
 }
 
 .box
-{
+{   
+    margin: 50px;
     position: relative;
     width: 450px;
-    height: 550px;
+    height: 750px;
     border-radius: 30px;
     background: #2f363e;
     padding: 30px 50px;
@@ -30,6 +31,49 @@ body
     inset 5px 5px 10px rgba(0, 0, 0, 0.5),
     inset 5px 5px 20px rgba(255, 255, 255, 0.2),
     inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.circle-container{
+    margin: 50px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.semicircle{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;    
+}
+
+.semicircle:nth-child(1){
+    background-color: red;
+    z-index: 2;
+}
+
+.semicircle:nth-child(2){
+    background-color: blue;
+    z-index: 3;
+}
+
+.semicircle:nth-child(3){
+    background-color: white;
+    z-index: 4;
+    display: none;
+}
+
+.outermost-circle{
+    width: 390px;
+    height: 390px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 5
 }
 
 h2
@@ -139,7 +183,7 @@ h2
 {
     position: relative;
     margin-top: 20px;
-    height: 350px;
+    height: 600px;
     overflow-y: auto;
     padding-right: 10px;
 }
