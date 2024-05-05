@@ -47,8 +47,10 @@ let pause = document.querySelector('#settings-pause')
 let reset = document.querySelector('#settings-reset')
 
 function pauseTimer(){
-    clearInterval(intervalId);
-    intervalId = false;
+    if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = false;
+    }
 }
 
 function resetTimer(){
