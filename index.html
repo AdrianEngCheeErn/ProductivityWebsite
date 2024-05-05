@@ -6,15 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <audio id="timerSound" src="sound.wav"></audio>
 </head>
 <body>
-    <div class = 'circle-container'>
-        <div class="semi-circle"></div>
-        <div class="semi-circle"></div>
-        <div class="semi-circle"></div>
-        <div class="outermost-circle"></div>
+    <div class="box">
+        <p id = "summary">Summary</p>
+        <div id="top-container" style="display: flex; align-items: center;">
+            <p id="pomodoro-sessions" style="margin-right: 10px;">Pomodoro Sessions</p>
+            <p id="pomodoro-value">0</p>
+        </div>
+        
+        <div id="tasks-container" style="display: flex; align-items: center;">
+            <p id="tasks-completed">Tasks Completed</p>
+            <p id="tasks-completed-value" style="margin-left: 10px;">0</p>
+        </div>
+        <iframe width="420" height="425" src="https://www.youtube.com/embed/ZXsQAXx_ao0?si=EVieGFihFnbt5A0z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+    <div class="box">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/48gR6Bc6bwlXFIr0zO9Qm5?utm_source=generator" width="100%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <p id = "countdown">Pomodoro Timer</p>
+        <div class="button-container">
+            <p id = "settings-start">Start</p>
+            <p id = "settings-pause">Pause</p>
+            <p id = "settings-reset">Reset</p>
+        </div>
 
+    </div>
     <div class="box">
         <h2>To Do List</h2>
         <input type="text" placeholder = "Write here..." id="inputBx">
