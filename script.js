@@ -80,7 +80,6 @@ function updateCountdown() {
     countdownEl.innerHTML = `${minutes}:${seconds}`;
 
     if (time <= 0) {
-        clearInterval(intervalId); 
         countdownEl.innerHTML = "Time's up!";
         numberOfPomodoroSession += 1;
         pomodoroValue.innerHTML = `${numberOfPomodoroSession}`;
