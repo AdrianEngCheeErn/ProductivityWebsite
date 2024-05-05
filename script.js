@@ -64,8 +64,8 @@ function startCountdownOnClick() {
 }
 
 function startAgain(){
-    intervalId = false;
-    clearInterval(intervalId);
+    clearInterval(intervalId); // Clear the interval
+    intervalId = false; // Reset intervalId to false
     countdownEl.innerHTML = "Pomodoro Timer";
     time = startingMinutes * 60;
 }
