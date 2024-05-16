@@ -35,7 +35,7 @@ let numberOfPomodoroSession = 0;
 
 
 //Pomodoro timer
-const startingMinutes = 25;
+const startingMinutes = 1;
 let time = startingMinutes * 60;
 const countdownEl = document.getElementById('countdown');
 const timerSound = document.getElementById('timerSound'); // Get reference to the audio element
